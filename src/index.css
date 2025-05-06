@@ -1,0 +1,35 @@
+/* Global Styles for Green and White Theme */
+:root {
+  --primary-color: #28a745; /* Green */
+  --secondary-color: #ffffff; /* White */
+  --font-color: #333333; /* Dark Gray for text */
+  --border-color: #ddd; /* Light border color */
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Main content area styling */
+.main-content {
+  min-height: calc(100vh - 120px); /* Adjust based on header height */
+  padding-top: 20px; /* Add some space between header and content */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+button, .btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+button:hover, .btn:hover {
+  background-color: #218838; /* Darker Green */
+}

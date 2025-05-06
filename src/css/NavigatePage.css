@@ -1,0 +1,139 @@
+/* NavigatePage.css */
+.navigate-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigate-container h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #2e7d32;
+}
+
+.navigate-description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #616161;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.map-container {
+  height: 70vh;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-container {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message {
+  text-align: center;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading-message {
+  background-color: #e8f5e9;
+  border-left: 4px solid #2e7d32;
+}
+
+.loading-message p {
+  color: #2e7d32;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #ffebee;
+  border-left: 4px solid #d32f2f;
+}
+
+.error-message p {
+  color: #d32f2f;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Popup styling */
+.leaflet-popup-content h3 {
+  color: #2e7d32;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.farmer-location {
+  font-style: italic;
+  color: #616161;
+}
+
+.farmer-contact {
+  font-weight: 500;
+}
+
+.farmer-products {
+  margin-top: 8px;
+}
+
+.farmer-products ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}
+
+.farmer-products li {
+  margin-bottom: 3px;
+}
+
+.farmer-product {
+  margin-top: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .map-container {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigate-container {
+    padding: 10px;
+  }
+
+  .map-container {
+    height: 50vh;
+  }
+}

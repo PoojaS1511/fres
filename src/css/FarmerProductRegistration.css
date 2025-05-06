@@ -1,0 +1,159 @@
+/* FarmerProductRegistration Styles */
+
+.farmer-product-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+}
+
+.farmer-product-registration-container > div {
+  width: 100%;
+  max-width: 600px;
+}
+
+.farmer-product-registration-container h2 {
+  color: #2d6a4f;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.farmer-product-registration-container form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.farmer-product-registration-container .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.farmer-product-registration-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.farmer-product-registration-container input,
+.farmer-product-registration-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.farmer-product-registration-container input:hover,
+.farmer-product-registration-container textarea:hover {
+  border-color: #aaa;
+}
+
+.farmer-product-registration-container textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.farmer-product-registration-container input[type="file"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.farmer-product-registration-container .image-preview {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #2d6a4f;
+}
+
+.farmer-product-registration-container button {
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.farmer-product-registration-container button:hover {
+  background-color: #1b4d33;
+}
+
+.farmer-product-registration-container button:disabled {
+  background-color: #b8c9c5;
+  cursor: not-allowed;
+}
+
+.farmer-product-registration-container input:focus,
+.farmer-product-registration-container textarea:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 5px rgba(45, 106, 79, 0.2);
+}
+
+.farmer-product-registration-container .alert {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  color: #e74c3c;
+  font-size: 16px;
+  background-color: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.farmer-product-registration-container .alert.success {
+  color: #2ecc71;
+  background-color: rgba(46, 204, 113, 0.1);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+/* Loading indicator styles */
+.farmer-product-registration-container button:disabled {
+  position: relative;
+}
+
+.farmer-product-registration-container button:disabled::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,86 @@
+/* General Styling */
+.goto-here {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Topbar Styling */
+  .py-1.bg-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .py-1.bg-primary .container .row .col-md .topper .text {
+    font-size: 14px;
+  }
+  
+  .icon-phone2, .icon-paper-plane {
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Navbar Styling */
+  .navbar.bg-dark {
+    background-color: #343a40 !important;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    color: #ff6347 !important;
+  }
+  
+  /* Registration Form */
+  .ftco-section {
+    padding: 60px 0;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

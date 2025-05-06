@@ -1,0 +1,81 @@
+/* Buyer Registration Styles */
+.buyer-registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .buyer-registration-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .buyer-registration-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .buyer-registration-box h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  

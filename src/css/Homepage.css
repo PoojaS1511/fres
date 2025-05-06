@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Topbar */
+.topbar {
+  background-color: #28a745; /* Green background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.navbar .nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #28a745;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/images/hero-farm.jpg') no-repeat center center/cover; /* Corrected path */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* White box for the text and buttons */
+.hero .hero-content {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+  padding: 30px 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero .hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2d6a4f; /* Green color for the title */
+}
+
+/* Search container and elements */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.hero .hero-search {
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+}
+
+.search-icon {
+  font-size: 18px;
+}
+
+.hero .register-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .register-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features .feature-box {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 250px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Container for the registration form */
+.farmer-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.farmer-registration-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: #2d6a4f;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1b4d33;
+}
+
+button:disabled {
+  background-color: #b8c9c5;
+  cursor: not-allowed;
+}
+
+/* Styling for the input fields when they are focused */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2d6a4f;
+}
+
+/* Styling for the image upload input */
+input[type="file"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Styling for alerts/messages */
+.alert {
+  margin-top: 20px;
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.alert.success {
+  color: #2ecc71;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}

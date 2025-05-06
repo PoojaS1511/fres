@@ -1,0 +1,167 @@
+/* Modern Signup Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2e7d32;
+  --primary-light: #60ad5e;
+  --primary-dark: #005005;
+  --accent-color: #ffb300;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --text-muted: #6c757d;
+  --background-light: #f8f9fa;
+  --background-dark: #e8f5e9;
+  --error-color: #f44336;
+  --success-color: #4caf50;
+  --border-radius: 12px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-light);
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Container for the sign-up page */
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.sign-up-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%232e7d32' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  margin-top: 15px;
+  color: var(--error-color);
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+  background-color: rgba(244, 67, 54, 0.1);
+  border-radius: 4px;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .sign-up-box {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input, select, button {
+    padding: 8px;
+  }
+}

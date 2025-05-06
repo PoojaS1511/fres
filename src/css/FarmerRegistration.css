@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the registration form */
+.farmer-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.farmer-registration-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: #2d6a4f;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1b4d33;
+}
+
+button:disabled {
+  background-color: #b8c9c5;
+  cursor: not-allowed;
+}
+
+/* Styling for the input fields when they are focused */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2d6a4f;
+}
+
+/* Styling for the image upload input */
+input[type="file"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Styling for alerts/messages */
+.alert {
+  margin-top: 20px;
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.alert.success {
+  color: #2ecc71;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}

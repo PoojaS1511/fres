@@ -1,0 +1,24 @@
+.card {
+    background-color: #f0fff4;
+    border: 1px solid #c8e6c9;
+    border-radius: 12px;
+    color: #2e7d32;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .card:hover {
+    background-color: #d0f0dc;
+    box-shadow: 0 6px 16px rgba(0, 128, 0, 0.1);
+  }
+  
+  .card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  

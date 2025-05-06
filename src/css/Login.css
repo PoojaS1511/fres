@@ -1,0 +1,83 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eaffea, #ffffff);
+    color: #333;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 128, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-box:hover {
+    transform: scale(1.01);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 2rem;
+    color: #65b96c;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border: 1px solid #cceccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-box input:focus {
+    outline: none;
+    border-color: #65b96c;
+    box-shadow: 0 0 6px #a8e6a3;
+  }
+  
+  .login-btn {
+    background: #65b96c;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 1.2rem;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background: #52a057;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(101, 185, 108, 0.3);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
